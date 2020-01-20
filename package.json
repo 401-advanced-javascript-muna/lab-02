@@ -1,0 +1,26 @@
+{
+  "name": "lab-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"npm index.js",
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js'"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-muna/lab-02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-muna/lab-02/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-muna/lab-02#readme",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0"
+  }
+}
