@@ -17,9 +17,15 @@ class Vehicle {
     stop() { return 'Stopping'; };
 }
 
-class Vehicle extends Car {
+class Car extends Vehicle {
     constructor(name, wheels) {
         super(name, wheels);
+    }
+    run() {
+        super.drive();
+        super.stop();
+
+
     }
 
 }
@@ -33,7 +39,10 @@ class Vehicle extends Motorcycle {
 
     // Calling the Car wheelie() method when Vehicle run()
     run() {
-        super.wheelie();
+        super.drive();
+        super.stop();
+
+
     }
 
 }

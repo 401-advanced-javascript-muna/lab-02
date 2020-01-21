@@ -5,8 +5,8 @@
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
-- [ci/cd](http://xyz.com) (GitHub Actions)
+- [submission PR](https://github.com/401-advanced-javascript-muna/lab-02/pull/1)
+- [ci/cd](https://github.com/401-advanced-javascript-muna/lab-02/actions) (GitHub Actions)
 
 
 
