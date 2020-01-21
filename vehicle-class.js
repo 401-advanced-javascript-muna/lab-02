@@ -17,37 +17,35 @@ class Vehicle {
     stop() { return 'Stopping'; };
 }
 
-class Car extends Vehicle {
+class Car extends Vehicle {   // if we have class we want to inher
+
     constructor(name, wheels) {
-        super(name, wheels);
+        super(name, 4);
     }
+
     run() {
         super.drive();
         super.stop();
-
-
     }
 
 }
 
-class Vehicle extends Motorcycle {
+class Motorcycle extends Vehicle {
 
+    constructor(name, wheels) {
+        super(name, 2);
+    }
     // Only for Vehicle.  This will also be a prototype method.
-    wheelie() {
-        return 'Wheee!';
-    }
+    wheelie() { return 'Wheee!';}
 
-    // Calling the Car wheelie() method when Vehicle run()
+    // Calling the Motorcycle wheelie() method when Vehicle run()
     run() {
         super.drive();
         super.stop();
-
-
     }
 
 }
 
 
-
-module.exports = { Car, Motorcycle };
+module.exports = { Car, Motorcycle };  
 // module.exports = Car;
