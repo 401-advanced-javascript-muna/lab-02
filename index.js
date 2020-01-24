@@ -15,10 +15,10 @@ console.log(harley.name, harley.wheelie(), harley.stop());
 
 const VehicleClass = require('./vehicle-class.js');
 console.log('Using Class');
-const mazda = new VehicleClass.Car('Mazda 3');
-console.log(mazda.name, mazda.drive(), mazda.stop());
+const mazda2 = new VehicleClass.Car('Mazda 3');
+console.log(mazda2.name, mazda2.drive(), mazda2.stop());
 
-const harley = new VehicleClass.Motorcycle('Harley');
-console.log(harley.name, harley.wheelie(), harley.stop());
+const harley2 = new VehicleClass.Motorcycle('Harley');
+console.log(harley2.name, harley2.wheelie(), harley2.stop());
 
 
