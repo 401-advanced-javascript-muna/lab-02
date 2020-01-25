@@ -53,22 +53,33 @@ describe('validator module performs basic validation of', () => {
     expect(boolC.isArray(bool)).toBeFalsy();
 
   });
+  it('objects', () => {
 
-  // it('objects', () => {
-  //   let obj = {x:'y'};
-  //   expect(validator.isObject(obj)).toBeFalsy();
-  // });
+    expect(strC.isObject(str)).toBeFalsy();
+    expect(numbr.isObject(num)).toBeFalsy();
+    expect(arrC.isObject(arr)).toBeTruthy();
+    expect(objC.isObject(obj)).toBeTruthy();
+    expect(funC.isObject(func)).toBeFalsy();
+    expect(boolC.isObject(bool)).toBeFalsy();
+  });
 
-  // it('booleans', () => {
-  //   let bool = false;
-  //   expect(validator.isBool(bool)).toBeFalsy();
-  // });
+  it('booleans', () => {
+    expect(strC.isBool(str)).toBeFalsy();
+    expect(numbr.isBool(num)).toBeFalsy();
+    expect(arrC.isBool(arr)).toBeFalsy();
+    expect(objC.isBool(obj)).toBeFalsy();
+    expect(funC.isBool(func)).toBeFalsy();
+    expect(boolC.isBool(bool)).toBeTruthy();
+  });
 
-  // it('functions', () => {
-  //   let func = () => {};
-  //   expect(validator.isFunc(func)).toBeFalsy();
-  // });
-
+  it('functions', () => {
+    expect(strC.isFunc(str)).toBeFalsy();
+    expect(numbr.isFunc(num)).toBeFalsy();
+    expect(arrC.isFunc(arr)).toBeFalsy();
+    expect(objC.isFunc(obj)).toBeFalsy();
+    expect(funC.isFunc(func)).toBeTruthy();
+    expect(boolC.isFunc(bool)).toBeFalsy();
+  });
 });
 
 
