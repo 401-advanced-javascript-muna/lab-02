@@ -2,17 +2,8 @@
 
 const validator = require('../lib/validator.js');
 
-//Using Matchers : https://jestjs.io/docs/en/expect
-
-// const data = require('../data/data.json');
-
-// let person = new validator.Person(data);
-
-
-// console.log(
 describe('validator module performs basic validation of', () => {
-
-  //   // TODO: Make this series of tests less repetitive ... DRY it out
+ // TODO: Make this series of tests less repetitive ... DRY it out
   let str = 'yes';
   let strC = new validator.Validate(str);
   let num = 1;
